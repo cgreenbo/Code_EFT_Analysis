@@ -1388,6 +1388,7 @@ TTree* tInput[nbfiles];
 string inputName;
 
 
+
 for (int i=0; i<nbfiles; i++)
 {
   inputName = "data/madgraph/output/1M/" + suffix[i];
@@ -1434,7 +1435,7 @@ if(reweight)
     TTree *t1 = tInput[8];            //.root file to be analyzed
 
     Rwgt_vs("PhiStar", EFT, 20, 0, 6.5, weight, to_string(W_value), t1, "#phi^{*}", "", "legendUpRight", "dim6top", "", "", "results/weighted/Rwgt");
-    Rwgt_vs("cosThetaStar", EFT, 20, -1, 1, weight, to_string(W_value), t1, "cos#theta*", "", "legendUpRight", "dim6top", "", "", "results/weighted/Rwgt");
+    //Rwgt_vs("cosThetaStar", EFT, 20, -1, 1, weight, to_string(W_value), t1, "cos#theta*", "", "legendUpRight", "dim6top", "", "", "results/weighted/Rwgt");
     //Rwgt_vs("top_mass", EFT, 20, 168, 178, weight, to_string(W_value), t1, "Top Mass [GeV]", "", "legendUpRight", "dim6top", "", "", "results/weighted/Rwgt");
     //Rwgt_vs("lepton_pt", EFT, 20, 0, 100, weight, to_string(W_value), t1, "Lepton Pt [GeV]", "", "legendUpRight", "dim6top", "", "", "results/weighted/Rwgt");
 
