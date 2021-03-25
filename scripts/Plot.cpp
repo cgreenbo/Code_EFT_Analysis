@@ -1430,7 +1430,7 @@ if(reweight)
     /////////////////Change the variables to get the Plot you want/////////////////
 
     string EFT = "ctwi";                 //EFT variable {ctwi,cbwi,SM}
-    string weight = "weight_ctwi_p2";   //Cut value
+    string weight = "weight_ctwi_p2";   //Cut value {weight_SM ; weight_ctwi_m2(m1,p1,p1) ; weight_cbwi_m2(m1,p1,p2)}
     int W_value = 2;                  //Wilson coefficient Value
     TTree *t1 = tInput[8];            //.root file to be analyzed
 
