@@ -155,7 +155,7 @@ string inputName;
 
 for (int i=0; i<nbfiles; i++)
 {
-  inputName = "data/madgraph/output/" + suffix[i];
+  inputName = "data/" + suffix[i];
   fInput[i] = new TFile(inputName.c_str(),"READ");
   tInput[i] = (TTree*) fInput[i]->Get("Tree");
 }
